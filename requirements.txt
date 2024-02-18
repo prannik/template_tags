@@ -1,0 +1,10 @@
+asgiref==3.7.2
+Django==5.0.2
+django-environ==0.11.2
+flake8==7.0.0
+flake8-import-order==0.18.2
+mccabe==0.7.0
+pycodestyle==2.11.1
+pyflakes==3.2.0
+sqlparse==0.4.4
+typing_extensions==4.9.0
