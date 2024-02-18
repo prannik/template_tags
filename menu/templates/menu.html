@@ -1,0 +1,18 @@
+  <div>
+        <ul>
+            {% for item in menu_items %}
+                <li {% if request.path == item.url %}class="active"{% endif %}>
+                    <a href="{{ item.url }}">{{ item.title }}</a>
+                    {% if item.children.exists %}
+                        <ul>
+                            {% for child in item.children.all %}
+                                <li>
+                                    <a href="{{ child.url }}">{{ child.title }}</a>
+                                </li>
+                            {% endfor %}
+                        </ul>
+                    {% endif %}
+                </li>
+            {% endfor %}
+        </ul>
+    </div>
